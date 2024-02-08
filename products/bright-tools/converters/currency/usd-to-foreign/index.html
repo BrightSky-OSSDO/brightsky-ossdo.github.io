@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+  <script>
+    function convertCurrency() {
+      var amount = document.getElementById("amount").value;
+      var currency = document.getElementById("currency").value;
+      
+      var exchangeRates = {
+        "AC": 0.015646680020,
+        "ARS": 830.14,
+        "AUD": 1.53,
+        "BHD": 0.38,
+        "BTC": 0.000022,
+        "BRL": 4.97,
+        "GBT": 3.67,
+        "BGN": 1.82,
+        "CAD": 1.35,
+        "CLP": 953.60,
+        "CNY": 7.11,
+        "COP": 3955.21,
+        "CZK": 23.16,
+        "DKK": 6.92,
+        "DOGE": 12.46,
+        "ETH": 0.00041,
+        "EUR": 0.93,
+        "HKD": 7.82,
+        "HUF": 360.32,
+        "INR": 82.99,
+        "IDR": 15653.00,
+        "ILS": 3.65,
+        "JPY": 100.00,
+        "MYR": 4.76,
+        "MXN": 17.06,
+        "TWD": 31.37,
+        "NZD": 1.64,
+        "NOK": 10.58,
+        "PEN": 3.86,
+        "PHP": 56.03,
+        "PLN": 4.03,
+        "RON": 4.62,
+        "RUB": 90.53,
+        "SAR": 3.75,
+        "SGD": 1.34,
+        "ZAR": 18.88,
+        "KRW": 1325.33,
+        "SEK": 10.48,
+        "CHF": 0.87,
+        "THB": 35.60,
+        "TRY": 30.60,
+        "AED": 3.67
+      };
+      
+      var convertedAmount = amount * exchangeRates[currency];
+      
+      document.getElementById("result").innerHTML = convertedAmount.toFixed(2) + " " + currency;
+    }
+    
+    window.addEventListener('DOMContentLoaded', function() {
+      var amountInput = document.getElementById('amount');
+      amountInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9.]/g, '');
+      });
+    });
+  </script>
+</head>
+<body>
+    <center>
+  <h1>Currency Converter</h1>
+  
+  <label for="amount">Amount in US dollars:</label>
+  <input type="text" id="amount" required><br><br>
+  
+  <label for="currency">Currency to convert to:</label>
+  <select id="currency">
+    <option value="AC">Antarctic Currency</option>
+    <option value="ARS">Argentine Peso</option>
+    <option value="AUD">Australian Dollar</option>
+    <option value="BHD">Bahraini Dinar</option>
+    <option value="BTC">Bitcoin</option>
+    <option value="BRL">Brazilian Real</option>
+    <option value="GBT">British Pound Sterling</option>
+    <option value="BGN">Bulgarian Lev</option>
+    <option value="CAD">Canadian Dollar</option>
+    <option value="CLP">Chilean Peso</option>
+    <option value="CNY">Chinese Yuan</option>
+    <option value="COP">Colombian Peso</option>
+    <option value="CZK">Czech Koruna</option>
+    <option value="DKK">Danish Krone</option>
+    <option value="DOGE">Dogecoin</option>
+    <option value="ETH">Ethereum</option>
+    <option value="EUR">Euro</option>
+    <option value="HKD">Hong Kong Dollar</option>
+    <option value="HUF">Hungarian Forint</option>
+    <option value="INR">Indian Rupee</option>
+    <option value="IDR">Indonesian Rupiah</option>
+    <option value="ILS">Israeli New Shekel</option>
+    <option value="JPY">Japanese Yen</option>
+    <option value="MYR">Malaysian Ringgit</option>
+    <option value="MXN">Mexican Peso</option>
+    <option value="TWD">New Taiwan Dollar</option>
+    <option value="NZD">New Zealand Dollar</option>
+    <option value="NOK">Norwegian Krone</option>
+    <option value="PEN">Peruvian Sol</option>
+    <option value="PHP">Philippine Peso</option>
+    <option value="PLN">Polish Zloty</option>
+    <option value="RON">Romanian Leu</option>
+    <option value="RUB">Russian Ruble</option>
+    <option value="SAR">Saudi Riyal</option>
+    <option value="SGD">Singapore Dollar</option>
+    <option value="ZAR">South African Rand</option>
+    <option value="KRW">South Korean Won</option>
+    <option value="SEK">Swedish Krona</option>
+    <option value="CHF">Swiss Franc</option>
+    <option value="THB">Thai Baht</option>
+    <option value="TRY">Turkish Lira</option>
+    <option value="AED">UAE Dirham</option>
+  </select><br><br>
+  
+  <button onclick="convertCurrency()">Convert</button><br><br>
+  
+  <div id="result"></div>
+  </center>
+</body>
+</html>
