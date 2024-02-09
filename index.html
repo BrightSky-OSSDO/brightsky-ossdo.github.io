@@ -13,6 +13,24 @@
   padding: 20px;
   margin: 10px;
 }
+      body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      min-height: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     </style>
   </head>
   <body>
@@ -54,5 +72,8 @@
         <a href="https://brightsky-ossdo.github.io/faq/">FAQ</a> |
       </nav>
     </center>
+    <div class="container">
+      <img class="image" src="under-construction.gif" alt="Under Construction">
+    </div>
   </body>
 </html>
