@@ -1,61 +1,230 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home - BrightSky</title>
-    <style>
-      .testimonials-container {
-  display: flex;
-  justify-content: space-between;
-}
+    <head>
+        <title>Home - BrightSky</title>
+        <style>
+            .container {
+              display: flex;
+              align-items: center;
+            }
+            .table-container {
+              margin-left: 20px;
+            }
+            td {
+                padding: 15px;
+            }
+            .sidebar {
+            width: 200px;
+            background-color: #ffff;
+            height: auto;
+            position: absolute;
+            }
+            .content {
+            margin-top: 0px;
+            margin-left: 200px;
+            padding: 16px;
+            text-align: left;
+            }
+            .blog {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                padding: 10px;
+            }
+            .testimonials {
+                display: flex;
+                align-items: center;
+            }
+            .why-choose-us {
+                display: flex;
+                align-items: center;
+            }
+            .subreddit {
+                display: flex;
+                align-items: center;
+            }
+            .x {
+                display: flex;
+                align-items: center;
+            }
+            .projects {
+                display: flex;
+                align-items: center;
+            }
+            .brightnet {
+                display: flex;
+                align-items: center;
+            }
+            .blink {
+            animation: blink 1s infinite;
+        }
 
-.testimonial {
-  width: 30%;
-  padding: 20px;
-  margin: 10px;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-      
-    </style>
-  </head>
-  <body>
-    <center>
-    <h1>The Magic of BrightSky</h1>
-    </center>
-    <hr>
-    <center>
-    <h2>Our Products</h2>
-    <h3><a href="http://brightsky-os.000webhostapp.com">BrightSky OS</a></h3>
-    <p>The first and currently only operating system (OS) to be created using the GDevelop game engine.</p>
-    <h3><a href="http://bright-tools.000webhostapp.com">BrightTools</a></h3>
-    <p>Various free online tools to help make your life easier.</p>
-    </center>
-    <hr>
-    <center>
-      <h2>Why Choose Us?</h2>
-      <p>At BrightSky OSSDO, we believe in providing access to powerful software tools without any cost. Our commitment to offering free software means that you can download and/or use our products in their entirety, without any limitations or paywalls. We believe that everyone should have the opportunity to benefit from our software without financial barriers.</p>
-    </center>
-    <hr>
-    <center>
-      <h2>Testimonials</h2>
-    </center>
-    <div class="testimonials-container">
-      <div class="testimonial">"I can't thank your company enough for developing and maintaining free and open-source software. It has made a significant impact on my organization's operations, allowing us to reduce costs while still benefiting from powerful tools."</div>
-      <div class="testimonial">"Your company's dedication to open-source software is truly inspiring. I've been using your software for my personal projects, and it has been a game-changer. Thank you for providing such valuable resources to the community!"</div>
-      <div class="testimonial">"I've been using your software for years, and I can't express how grateful I am for your dedication to open-source development. Your commitment to providing high-quality software for free has been a game-changer for my business. Thank you!"</div>
-    </div>
-    <hr>
-    <center>
-      <h2>Contact Us</h2>
-      <p>If you have any issues or questions, feel free to send us an <a href="mailto:help.brightsky@gmail.com">email</a>, tag us on <a href="https://twitter.com/BrightSky_OSSDO">X</a>, or post on our <a href="https://new.reddit.com/r/BrightSky/">subreddit</a>.</p>
-    </center>
-    <center>
-      <nav>
-        <a href="https://brightsky-ossdo.github.io">Home</a> |
-        <a href="https://brightsky-ossdo.github.io/about/">About</a> |
-        <a href="https://brightsky-ossdo.github.io/privacy-policy/">Privacy Policy</a> |
-        <a href="https://brightsky-ossdo.github.io/faq/">FAQ</a> |
-      </nav>
-    <br>
-    <img src="under-construction.gif">
-    </center>
-  </body>
+            
+        </style>
+    </head>
+    <body style="background-color:#ffff">
+        <div class="container">
+        <a href="https://brightsky-ossdo.github.io"><img src="fancytext.png" alt="FancyText" width="398" height="85"></a>
+        <div class="table-container">
+        <table width="84%">
+            <tr>
+             <td width="14%", style="text-align: center;"><a style="text-decoration: none;" href="https://brightsky-ossdo.github.io"><img src="house.png"><br>Home</a></td>
+             <td width="14%", style="text-align: center;"><a style="text-decoration: none;" href="https://brightsky-ossdo.github.io/products"><img src="box.png"><br>Products</a></td>
+             <td width="14%", style="text-align: center;"><a style="text-decoration: none;" href="https://brightsky-ossdo.github.io/about"><img src="team.png"><br>About Us</a></td>
+             <td width="14%", style="text-align: center;"><a style="text-decoration: none;" href="https://brightsky-ossdo.github.io/privacy-policy"><img src="compliant (1).png"><br>Privacy Policy</a></td>
+             <td width="14%", style="text-align: center;"><a style="text-decoration: none;" href="https://brightsky-ossdo.github.io/faq"><img src="conversation.png"><br>FAQ</a></td>
+             <td width="14%", style="text-align: center;"><img src="sitemap.png"><br>Sitemap</td>
+            </tr>
+            </table>
+            </div>
+        </div>
+        <hr style="height:5px; background-color: #000; width:70%; text-align: left; margin-left: 0">
+        <div class="sidebar">
+            <a style="text-decoration: none;" href="https://brightskychronicle.blogspot.com">
+            <div class="blog">
+                <img src="blogging (1).png">
+                <span>Our Blog</span>
+            </div>
+            </a>
+            <hr>
+            <div class="testimonials">
+                <span>Testimonials</span>
+                <img src="testimonials.png">
+            </div>
+            <hr>
+            <div class="projects">
+                <img src="lightbulb.png">
+                <span>Projects</span>
+            </div>
+            <hr>
+            <div class="why-choose-us">
+                <span>Why Choose Us?</span>
+                <img src="handshake.png">
+            </div>
+            <hr>
+            <a style="text-decoration: none;" href="https://www.reddit.com/r/BrightSky">
+            <div class="subreddit">
+                    <img src="reddit.png">
+                    <span>Official Subreddit</span>
+            </div>
+            </a>
+            <hr>
+            <a style="text-decoration: none;" href="https://twitter.com/BrightSky_OSSDO">
+            <div class="x">
+                <span>BrightSky On X</span>
+                <img src="twitter.png">
+            </div>
+            </a>
+            <hr>
+            <a style="text-decoration: none;" href="http://brightnet.22web.org/forum/profile/BrightSky_Official">
+            <div class="brightnet">
+                <img src="fishing-net (1).png">
+                <span>BrightSky On BrightNet</span>
+            </div>
+            </a>
+            <hr>
+            <br>
+            <br>
+            <center>
+            <div>
+            <img src="country (1).png">
+            </div>
+            </center>
+            <select id="country">
+                <option>United States</option>
+                <option>Brazil</option>
+                <option>China</option>
+                <option>Egypt</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Israel</option>
+                <option>Japan</option>
+                <option>Mexico</option>
+                <option>Russia</option>
+                <option>Sweden</option>
+            </select>
+            <button id="change", style="width: 50px">Go</button>
+        </div>
+        <div class="content">
+            <h1 style="margin-top: 0;" class="blink">The Magic of BrightSky</h1>
+            <marquee behavior="slide" direction="left"><h2 style="margin-top: 0;">Leading the Way in Free Software</h2></marquee>
+            <h3>BrightSky OS 1.0 to Be Released This Summer</h3>
+            <p>Get ready for the upcoming summer release of BrightSky OS 1.0, the fully featured and bug-free version of our flagship operating system, bringing a seamless user experience to your computer.</p>
+            <h3>Access Various Lost Ancient Texts with The Lost Archive</h3>
+            <p>Introducing The Lost Archive, an upcoming website that offers free browser access to a diverse collection of lost ancient texts, providing English translations for an enriching exploration of our ancient heritage.</p>
+            <h3>BrightSky OSSDO's Website is Getting a Redesign</h3>
+            <p>Exciting changes ahead! BrightSky OSSDO's website is undergoing a complete redesign to enhance user experience and address reliability issues, offering a fresh and improved interface on a new domain for seamless access to our resources.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <select id="selectProduct", style="width: 500px;">
+                <option value="">Select a product</option>
+                <option value="https://brightsky-os.000webhostapp.com">BrightSky OS</option>
+                <option value="https://bright-tools.000webhostapp.com">BrightTools</option>
+                <option value="http://brightnet.22web.org">BrightNet</option>
+                <option value="https://brightsky-ossdo.github.io/products/thelostarchive">The Lost Archive</option>
+                <option value="https://usiarc.fandom.com/wiki/USIARC_Wiki">USIARC</option>
+            </select>
+            <button id="go", style="width: 50px">Go</button>
+        </div>
+        <hr>
+        <center>
+            <img src="under-construction.gif">
+            <p><i>Last Updated: Fri Feb 09 23:45:00 2024</i></p>
+            <p><i>&copy;2023-2024 BrightSky OSSDO</i></p>
+        </center>
+        <hr>
+        <p><i>The following navigation is provided for browsers that have trouble with div elements:</i></p>
+        <ul>
+            <li><a href="https://brightsky-ossdo.github.io">Home</a></li>
+            <li><a href="https://brightsky-ossdo.github.io/products">Products</a></li>
+            <li><a href="https://brightsky-ossdo.github.io/about">About Us</a></li>
+            <li><a href="https://brightsky-ossdo.github.io/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://brightsky-ossdo.github.io/faq">FAQ</a></li>
+            <li>Sitemap</li>
+            <li><a href="https://brightskychronicle.blogspot.com">Our Blog</a></li>
+            <li>Testimonials</li>
+            <li>Projects</li>
+            <li>Why Choose Us?</li>
+                <li><a href="https://www.reddit.com/r/BrightSky/">Official Subreddit</a></li>
+            <li><a href="https://twitter.com/BrightSky_OSSDO">BrightSky On X</a></li>
+            <li><a href="http://brightnet.22web.org/forum/profile/brightsky_official/">BrightSky On BrightNet</a></li>
+        </ul>
+        <hr>
+        <p><b>Internet URL:</b><a href="https://brightsky-ossdo.github.io">https://brightsky-ossdo.github.io</a></p>
+        <script>
+            const dropdown = document.getElementById('selectProduct');
+            const button = document.getElementById('go');
+
+            button.addEventListener('click', function() {
+                const selectedOption = dropdown.value;
+                if (selectedOption) {
+                    window.location.href = selectedOption;
+                } else {
+                    alert('Please select a product.');
+                }
+            });
+        </script>
+    </body>
 </html>
