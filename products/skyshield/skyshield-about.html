@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About - SkyShield Antivirus</title>
+        <style>
+            * {
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            .background {
+                width: 100%;
+                height: 100vh;
+                background-color: #000;
+            }
+            .logo {
+                width: 362px;
+                height: 63px;
+            }
+            .container {
+                display: flex;
+                gap: 10px;
+                height: 80vh;
+                width: 100%
+            }
+            .left-column {
+                width: 10%;
+                height: 80vh;
+                background-color: #dddddd;
+                border-radius: 25px;
+                padding: 20px;
+            }
+            .right-column {
+                width: 90%;
+                height: 80vh;
+                background-color: #fff;
+                border-radius: 25px;
+                padding: 20px;
+                
+            }
+            .welcome {
+                width: 725px;
+                height: 250px;
+                border: 5px solid black;
+
+            }
+            .welcome-banner {
+                width: 100%;
+                height: 30px;
+                background-color: #dddddd;
+                border-bottom: 5px solid black;
+            }
+            .logobox {
+                width: 725px;
+                height: 250px;
+                border: 5px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .antivirus-logo {
+                width: 128px;
+                height: 128px;
+            }
+            .ontop {
+                width: 100%;
+                height: 85vh;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+            .welcome-content {
+                padding: 5px;
+            }
+            body {
+                font-family: 'Times New Roman', Times, serif
+            }
+            .about-column {
+                width: 45%;
+                height: 100%;
+                text-align: left;
+                border: 2px solid black
+            }
+            .row {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+                height: 95%
+            }
+        </style>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                var link = document.getElementById('myLink');
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    location.reload();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="logo">
+                <img src="Cool Text - SkyShield 454829517676916.png" style="width: 362px; height: 53px;">
+            </div>
+            <div class="container">
+                <div class="left-column">
+                    <h3>SkyShield Antivirus</h3>
+                    <ul>
+                        <li><a href="http://brightsky-ossdo.org/products/skyshield">Home</a></li>
+                        <li><a href="http://brightsky-ossdo.org/products/skyshield/download">Download</a></li>
+                        <li><a href="#" id="myLink">About</a></li>
+                    </ul>
+                    <br>
+                    <hr>
+                </div>
+                <div class="right-column">
+                    <h1 style="text-align: center;">About SkyShield Antivirus</h1>
+                    <div class="row">
+                    <div class="about-column">
+                        <h2>Introduction</h2>
+                        <p>SkyShield Antivirus is a powerful and lightweight antivirus software designed to protect your computer and ensure your online safety. Developed by BrightSky OSSDO, SkyShield Antivirus combines cutting-edge technology with user-friendly features to provide comprehensive protection against a wide range of cyber threats.</p>
+                        <h2>Advanced Protection with Simplicity in Mind</h2>
+                        <p>SkyShield Antivirus was meticulously programmed in C# using the Windows Forms framework on the industry-standard Microsoft Visual Studio, ensuring a robust and reliable antivirus solution. We believe that cybersecurity is a fundamental human right, which is why we offer SkyShield Antivirus completely free of charge. Our mission is to make top-notch security accessible to everyone.</p>
+                        <h2>Efficient Scans for Comprehensive Protection</h2>
+                        <p>With SkyShield Antivirus, you can trust that your computer is thoroughly scanned for potential threats. The software offers three essential scan options to accommodate your needs:</p>
+                        <ol>
+                            <li><b>Quick Scan</b>: Our Quick Scan targets the most common hiding places for viruses and malware, including the Downloads folder, the AppData folder, and the Program Files folder. In just around 20 seconds, the Quick Scan provides a swift yet effective assessment of your system's security.</li>
+                            <li><b>Full System Scan</b>: For a more comprehensive analysis, the Full System Scan examines your entire C: drive, leaving no stone unturned. Although it may take approximately 100 seconds, rest assured that every nook and cranny of your computer is meticulously inspected for any potential threats.</li>
+                            <li><b>Custom Scan</b>: With the Custom Scan feature, you have the freedom to select specific folders to scan manually. While there is a minor bug that prevents scanning of empty folders containing only subfolders, a simple workaround--creating an empty text file within the folder--allows you to scan all the subfolders efficiently. The scan time varies depending on factors such as file size and quantity, but you'll find it to be a swift process.</li>
+                        </ol>
+                    </div>
+                    <div class="about-column">
+                        <h2>Additional Features for Enhanced Security</h2>
+                        <p>SkyShield Antivirus goes beyond scans to provide even greater protection. The software offers two additional features that can be easily enabled or disabled according to your preferences:</p>
+                        <ol>
+                            <li><b>Real Time Protection</b>: When enabled, Real Time Protection operates silently in the background, diligently monitoring files as they are downloaded. If any potential threats are detected, you'll be promptly alerted, ensuring that your system remains secure. Rest assured, you'll only receive notifications when a virus is detected, minimizing interruptions during your computing experience.</li>
+                            <li><b>Firewall</b>: SkyShield Antivirus's built-in firewall acts as a safeguard, preventing unauthorized access to your network. The firewall automatically detects SSID, IP, and Wi-Fi passwords without any manual configuration. Whether you're connected to a home network or a mobile hotspot, our firewall provides an added layer of defense. We recommend disabling Windows Defender Firewall when using SkyShield Antivirus's firewall to avoid conflicts.</li>
+                        </ol>
+                        <h2>Comprehensive Virus Detection</h2>
+                        <p>SkyShield Antivirus is armed with a robust virus detection system, capable of identifying over 60 viruses that target Windows users. Although the specific virus list is not disclosed for security reasons, you can trust that SkyShield Antivirus effectively detects a wide range of threats, including Trojan horses, Spyware, Adware, Ransomware, and Scareware.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <p>Download SkyShield Antivirus today and experience the peace of mind that comes with advanced cybersecurity. Protecting you is our priority.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
